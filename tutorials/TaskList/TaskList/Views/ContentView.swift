@@ -15,11 +15,26 @@ struct ContentView: View {
   @State var modalIsVisible = false
     var body: some View {
       NavigationView {
-        List(taskStore.tasks) {
-          task in Text(task.name)
+        List {
+          ForEach(taskStore.tasks) {
+            index in
+            RowView(task: self.$taskStore.tasks[index])
+          }
+          .onMove {
+            sourceIndices, destinationIndex in
+            self.taskStore.tasks.move(
+                fromOffsets: sourceIndices,
+                toOffset: destinationIndex
+            )
+          }
+          .onDelete {
+            indexSet in self.taskStore.tasks.remove(atOffsets: indexSet)
+          }
         }
+        
         .navigationBarTitle("Tasks")
         .navigationBarItems(
+          leading: EditButton(),
           trailing:
             Button(action: {
               self.modalIsVisible = true
@@ -39,3 +54,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(taskStore: TaskStore())
     }
 }
+
+

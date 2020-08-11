@@ -16,6 +16,10 @@
 		4812D7F924E25CD2009290D9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D7F824E25CD2009290D9 /* Task.swift */; };
 		4812D7FC24E25D0C009290D9 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D7FB24E25D0C009290D9 /* TaskStore.swift */; };
 		4812D80224E2BD87009290D9 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D80124E2BD87009290D9 /* NewTaskView.swift */; };
+		4812D80624E2D492009290D9 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D80524E2D492009290D9 /* RowView.swift */; };
+		4812D80824E2D718009290D9 /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D80724E2D718009290D9 /* TaskEditingView.swift */; };
+		4812D81424E2E01A009290D9 /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D81224E2E01A009290D9 /* IndexedCollection.swift */; };
+		4812D81524E2E01A009290D9 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4812D81324E2E01A009290D9 /* ForEach.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		4812D7F824E25CD2009290D9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		4812D7FB24E25D0C009290D9 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		4812D80124E2BD87009290D9 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		4812D80524E2D492009290D9 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		4812D80724E2D718009290D9 /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
+		4812D81224E2E01A009290D9 /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		4812D81324E2E01A009290D9 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		4812D7D824E25C7D009290D9 = {
 			isa = PBXGroup;
 			children = (
+				4812D81124E2E01A009290D9 /* extension */,
 				4812D7E324E25C7E009290D9 /* TaskList */,
 				4812D7E224E25C7E009290D9 /* Products */,
 			);
@@ -94,10 +103,21 @@
 		4812D80424E2BE7B009290D9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4812D80124E2BD87009290D9 /* NewTaskView.swift */,
+				4812D80524E2D492009290D9 /* RowView.swift */,
 				4812D7E824E25C7E009290D9 /* ContentView.swift */,
+				4812D80124E2BD87009290D9 /* NewTaskView.swift */,
+				4812D80724E2D718009290D9 /* TaskEditingView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4812D81124E2E01A009290D9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4812D81224E2E01A009290D9 /* IndexedCollection.swift */,
+				4812D81324E2E01A009290D9 /* ForEach.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +193,13 @@
 			files = (
 				4812D7FC24E25D0C009290D9 /* TaskStore.swift in Sources */,
 				4812D7F924E25CD2009290D9 /* Task.swift in Sources */,
+				4812D81424E2E01A009290D9 /* IndexedCollection.swift in Sources */,
+				4812D80824E2D718009290D9 /* TaskEditingView.swift in Sources */,
+				4812D80624E2D492009290D9 /* RowView.swift in Sources */,
 				4812D80224E2BD87009290D9 /* NewTaskView.swift in Sources */,
 				4812D7E524E25C7E009290D9 /* AppDelegate.swift in Sources */,
 				4812D7E724E25C7E009290D9 /* SceneDelegate.swift in Sources */,
+				4812D81524E2E01A009290D9 /* ForEach.swift in Sources */,
 				4812D7E924E25C7E009290D9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,8 +21,7 @@ struct NewTaskView: View {
         Button("Add") {
           self.taskStore.tasks.append(
             Task(name: self.text)
-          )
-          
+          )          
           self.presentationMode.wrappedValue.dismiss()
         }
         .disabled(text.isEmpty)
