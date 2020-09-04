@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48439A2D25029C1000535406 /* DadJokeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48439A2A25029C1000535406 /* DadJokeDataModel.swift */; };
+		48439A2E25029C1000535406 /* DadJokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48439A2B25029C1000535406 /* DadJokeService.swift */; };
+		48439A2F25029C1000535406 /* DadJokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48439A2C25029C1000535406 /* DadJokeViewModel.swift */; };
 		488A77CB24FB7FA700FA1DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A77CA24FB7FA700FA1DD8 /* AppDelegate.swift */; };
 		488A77CD24FB7FA700FA1DD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A77CC24FB7FA700FA1DD8 /* ContentView.swift */; };
 		488A77CF24FB7FAB00FA1DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488A77CE24FB7FAB00FA1DD8 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48439A2A25029C1000535406 /* DadJokeDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeDataModel.swift; sourceTree = "<group>"; };
+		48439A2B25029C1000535406 /* DadJokeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeService.swift; sourceTree = "<group>"; };
+		48439A2C25029C1000535406 /* DadJokeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadJokeViewModel.swift; sourceTree = "<group>"; };
 		488A77C724FB7FA700FA1DD8 /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488A77CA24FB7FA700FA1DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488A77CC24FB7FA700FA1DD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +62,9 @@
 			children = (
 				488A77CA24FB7FA700FA1DD8 /* AppDelegate.swift */,
 				488A77CC24FB7FA700FA1DD8 /* ContentView.swift */,
+				48439A2A25029C1000535406 /* DadJokeDataModel.swift */,
+				48439A2B25029C1000535406 /* DadJokeService.swift */,
+				48439A2C25029C1000535406 /* DadJokeViewModel.swift */,
 				488A77CE24FB7FAB00FA1DD8 /* Assets.xcassets */,
 				488A77D324FB7FAB00FA1DD8 /* Main.storyboard */,
 				488A77D724FB7FAB00FA1DD8 /* DadJokes.entitlements */,
@@ -143,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48439A2D25029C1000535406 /* DadJokeDataModel.swift in Sources */,
 				488A77CD24FB7FA700FA1DD8 /* ContentView.swift in Sources */,
+				48439A2F25029C1000535406 /* DadJokeViewModel.swift in Sources */,
+				48439A2E25029C1000535406 /* DadJokeService.swift in Sources */,
 				488A77CB24FB7FA700FA1DD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
